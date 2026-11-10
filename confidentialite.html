@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Règles de confidentialité | Sauvegarde Obsidian</title>
+  <meta name="description" content="Données utilisées par la sauvegarde personnelle du coffre Obsidian.">
+  <style>
+  :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.65; color: #24243b; background: #f7f6fc; }
+  body { margin: 0; }
+  header, main, footer { width: min(44rem, calc(100% - 2.5rem)); margin-inline: auto; }
+  header { padding-block: 1.4rem; border-bottom: 1px solid #d8d3e7; }
+  main { padding-block: clamp(2rem, 7vw, 4rem) 2.5rem; }
+  footer { padding-block: 1rem 2rem; border-top: 1px solid #d8d3e7; }
+  h1, h2 { line-height: 1.2; }
+  h1 { font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 1.25rem; }
+  h2 { font-size: 1.3rem; margin-top: 2rem; }
+  p { margin: 0.7rem 0; }
+  a { color: #503396; text-underline-offset: 0.18em; }
+  a:focus-visible { outline: 2px solid #503396; outline-offset: 4px; }
+  .intro { font-size: 1.16rem; }
+  .flow { display: inline-block; padding: 0.5rem 0.9rem; border-left: 3px solid #6543aa; background: #ebe6f8; font-weight: 650; }
+  </style>
+</head>
+<body>
+  <header><a href="index.html">Sauvegarde Obsidian</a></header>
+  <main>
+    <h1>Règles de confidentialité</h1>
+    <p class="intro">Cette page décrit l’utilisation des données par Sauvegarde Obsidian, une configuration personnelle de rclone exécutée sur un PC Windows.</p>
+    <h2>Données consultées et transférées</h2>
+    <p>Rclone consulte la liste des fichiers et dossiers de la sauvegarde ainsi que leurs métadonnées, comme le nom, la taille et l’empreinte numérique. Il compare ces informations à celles du coffre local. Le contenu des nouveaux fichiers et des fichiers modifiés est envoyé à Google Drive.</p>
+    <p>L’autorisation accordée à rclone couvre les fichiers du compte Google Drive. La tâche Windows est configurée pour utiliser uniquement le dossier Drive choisi pour la sauvegarde.</p>
+    <h2>Utilisation, stockage et partage</h2>
+    <p>Les données servent à comparer les fichiers et à maintenir la copie du coffre. Les fichiers copiés et leurs anciennes versions restent dans le dossier Google Drive choisi, où les paramètres de partage de Drive s’appliquent. La configuration de rclone, le jeton d’accès et le journal de sauvegarde sont stockés sur le PC. Le journal peut contenir des noms de fichiers et des messages d’erreur.</p>
+    <p>Les fichiers du coffre sont transférés vers Google Drive pour la sauvegarde. Les pages publiques d’information sont hébergées séparément sur GitHub Pages. GitHub indique qu’il journalise l’adresse IP des visiteurs à des fins de sécurité. <a href="https://docs.github.com/fr/pages/getting-started-with-github-pages/what-is-github-pages">Informations de GitHub Pages</a>.</p>
+    <h2>Retirer l’accès et supprimer les données</h2>
+    <p>Le titulaire du compte peut retirer l’autorisation de rclone dans les <a href="https://myaccount.google.com/connections">connexions de son compte Google</a>. Il gère la conservation et la suppression des copies et des anciennes versions depuis Google Drive, ainsi que la suppression de la configuration et du journal sur son PC.</p>
+    <h2>Contact</h2>
+    <p>Pour une question sur la sauvegarde ou l’accès aux données, utilise l’adresse d’assistance du projet dans Google Cloud.</p>
+  </main>
+  <footer><small><a href="index.html">Retour à l’accueil</a></small></footer>
+</body>
+</html>

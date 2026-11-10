@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sauvegarde Obsidian</title>
+  <meta name="description" content="Présentation de la sauvegarde personnelle du coffre Obsidian vers Google Drive.">
+  <style>
+  :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.65; color: #24243b; background: #f7f6fc; }
+  body { margin: 0; }
+  header, main, footer { width: min(44rem, calc(100% - 2.5rem)); margin-inline: auto; }
+  header { padding-block: 1.4rem; border-bottom: 1px solid #d8d3e7; }
+  main { padding-block: clamp(2rem, 7vw, 4rem) 2.5rem; }
+  footer { padding-block: 1rem 2rem; border-top: 1px solid #d8d3e7; }
+  h1, h2 { line-height: 1.2; }
+  h1 { font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 1.25rem; }
+  h2 { font-size: 1.3rem; margin-top: 2rem; }
+  p { margin: 0.7rem 0; }
+  a { color: #503396; text-underline-offset: 0.18em; }
+  a:focus-visible { outline: 2px solid #503396; outline-offset: 4px; }
+  .intro { font-size: 1.16rem; }
+  .flow { display: inline-block; padding: 0.5rem 0.9rem; border-left: 3px solid #6543aa; background: #ebe6f8; font-weight: 650; }
+  </style>
+</head>
+<body>
+  <header>Projet personnel</header>
+  <main>
+    <h1>Sauvegarde Obsidian</h1>
+    <p class="intro">Sauvegarde Obsidian est une configuration personnelle de rclone qui copie un coffre Obsidian depuis un PC Windows vers un dossier Google Drive.</p>
+    <p class="flow">PC Windows → Google Drive</p>
+    <h2>Comment fonctionne la copie</h2>
+    <p>Rclone compare les fichiers du coffre avec ceux du dossier de sauvegarde. Il envoie les nouveaux fichiers et les fichiers modifiés. Les changements effectués sur Drive restent sur Drive.</p>
+    <p>Lorsqu’un fichier est remplacé sur Drive, son ancienne version est conservée dans un sous-dossier de la sauvegarde. Les fichiers présents uniquement sur Drive sont conservés.</p>
+    <h2>Autorisation Google</h2>
+    <p>Le titulaire du compte autorise rclone dans son navigateur. Cette autorisation permet à rclone de consulter et de mettre à jour la sauvegarde depuis le PC.</p>
+    <p><a href="confidentialite.html">Lire les règles de confidentialité</a></p>
+  </main>
+  <footer><small>Sauvegarde Obsidian</small></footer>
+</body>
+</html>
